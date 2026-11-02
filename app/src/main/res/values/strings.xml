@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用标题：姓名 + 学号 -->
+    <string name="app_name">龚涛 2024110509</string>
+
+    <!-- ==================== 主界面 ==================== -->
+    <string name="main_title">翻牌游戏</string>
+    <string name="main_subtitle">个人信息 · 翻牌游戏（MVC 练习）</string>
+    <string name="label_name">姓名</string>
+    <string name="label_gender">性别</string>
+    <string name="label_student_id">学号</string>
+    <string name="label_phone">电话</string>
+    <string name="label_email">邮件地址</string>
+    <string name="label_hobbies">爱好</string>
+    <string name="label_high_score">游戏最高分</string>
+    <string name="btn_edit_profile">修改个人信息</string>
+    <string name="btn_play_game">翻牌游戏</string>
+    <string name="main_hint">点击下方按钮修改个人信息，或者进入翻牌游戏</string>
+    <string name="score_value_format">%1$d 分</string>
+
+    <!-- ==================== 默认玩家信息 ==================== -->
+    <string name="player_default_name">龚涛</string>
+    <string name="player_default_gender">男</string>
+    <string name="player_default_student_id">2024110509</string>
+    <string name="player_default_phone">13000000000</string>
+    <string name="player_default_email">gongtao@sicnu.edu.cn</string>
+    <string name="gender_male">男</string>
+    <string name="gender_female">女</string>
+    <string name="avatar_tip">点击头像可更换</string>
+    <string name="hobby_separator">、</string>
+    <string name="hobby_none">未选择</string>
+
+    <!-- 爱好选项（界面上的复选框由代码按这个数组动态生成） -->
+    <string-array name="hobbies">
+        <item>阅读</item>
+        <item>游戏</item>
+        <item>购物</item>
+    </string-array>
+
+    <!-- ==================== 修改信息页 ==================== -->
+    <string name="edit_title">信息修改</string>
+    <string name="edit_hint">修改后立即生效。本次实验不写入文件，重新打开应用会恢复默认信息。</string>
+    <string name="edit_name_hint">请输入姓名</string>
+    <string name="edit_student_id_hint">请输入学号</string>
+    <string name="edit_phone_hint">请输入电话号码</string>
+    <string name="edit_email_hint">请输入电子邮件地址</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_cancel">取消</string>
+    <string name="toast_name_required">姓名不能为空</string>
+    <string name="toast_phone_required">电话不能为空</string>
+    <string name="toast_email_invalid">邮件地址格式不正确</string>
+    <string name="toast_profile_saved">个人信息已更新</string>
+
+    <!-- ==================== 翻牌游戏页 ==================== -->
+    <string name="game_title">翻牌游戏</string>
+    <string name="game_score">得分：%1$d</string>
+    <string name="game_progress">已配对：%1$d / %2$d</string>
+    <string name="game_best">游戏最高分：%1$d</string>
+    <string name="game_rule">翻开两张牌，点数相同得 4 分、花色相同得 1 分，配对成功后不可再翻</string>
+    <string name="btn_restart">重置游戏</string>
+    <string name="btn_exit">退出</string>
+    <string name="card_back">?</string>
+
+    <!-- ==================== 完成弹窗 ==================== -->
+    <string name="dialog_win_title">恭喜，全部配对完成！</string>
+    <string name="dialog_win">本局得分 %1$d 分。</string>
+    <string name="dialog_win_record">本局得分 %1$d 分，刷新了最高分！</string>
+    <string name="dialog_play_again">再来一局</string>
+    <string name="dialog_close">关闭</string>
+</resources>

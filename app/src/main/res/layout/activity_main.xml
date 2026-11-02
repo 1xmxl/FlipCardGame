@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主界面：ConstraintLayout + 信息面板，显示玩家基本信息 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/main_title"
+            android:textColor="@color/primary_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/main_subtitle"
+            android:textColor="@color/secondary_text"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <!-- 玩家信息面板 -->
+        <LinearLayout
+            android:id="@+id/panelProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_panel"
+            android:orientation="vertical"
+            android:padding="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSubtitle">
+
+            <!-- 头像 + 姓名 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvAvatar"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/bg_avatar_1"
+                    android:gravity="center"
+                    android:textColor="@color/card_back_text"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/InfoLabel"
+                        android:text="@string/label_name" />
+
+                    <TextView
+                        android:id="@+id/tvNameValue"
+                        style="@style/InfoValue"
+                        android:layout_marginBottom="0dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/divider" />
+
+            <TextView
+                style="@style/InfoLabel"
+                android:layout_marginTop="12dp"
+                android:text="@string/label_gender" />
+
+            <TextView
+                android:id="@+id/tvGenderValue"
+                style="@style/InfoValue" />
+
+            <TextView
+                style="@style/InfoLabel"
+                android:text="@string/label_student_id" />
+
+            <TextView
+                android:id="@+id/tvStudentIdValue"
+                style="@style/InfoValue" />
+
+            <TextView
+                style="@style/InfoLabel"
+                android:text="@string/label_phone" />
+
+            <TextView
+                android:id="@+id/tvPhoneValue"
+                style="@style/InfoValue" />
+
+            <TextView
+                style="@style/InfoLabel"
+                android:text="@string/label_email" />
+
+            <TextView
+                android:id="@+id/tvEmailValue"
+                style="@style/InfoValue" />
+
+            <TextView
+                style="@style/InfoLabel"
+                android:text="@string/label_hobbies" />
+
+            <TextView
+                android:id="@+id/tvHobbiesValue"
+                style="@style/InfoValue" />
+
+            <TextView
+                style="@style/InfoLabel"
+                android:text="@string/label_high_score" />
+
+            <TextView
+                android:id="@+id/tvHighScoreValue"
+                style="@style/InfoValue"
+                android:layout_marginBottom="0dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/btn_edit_profile"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/panelProfile" />
+
+        <Button
+            android:id="@+id/btnPlayGame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/btn_play_game"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnEditProfile" />
+
+        <TextView
+            android:id="@+id/tvHint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/main_hint"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnPlayGame" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#0D47A1</color>
+    <color name="primary_dark">#0A3D8F</color>
+    <color name="accent">#009688</color>
+
+    <color name="page_background">#F2F3F5</color>
+    <color name="panel_background">#FFFFFF</color>
+    <color name="primary_text">#1A1A1A</color>
+    <color name="secondary_text">#6B7075</color>
+    <color name="divider">#E0E3E7</color>
+
+    <!-- 牌面配色 -->
+    <color name="card_back_color">#1565C0</color>
+    <color name="card_back_stroke">#0D47A1</color>
+    <color name="card_back_text">#FFFFFF</color>
+    <color name="card_face_color">#FFFFFF</color>
+    <color name="card_matched_color">#E3F2E8</color>
+    <color name="heart_red">#D32F2F</color>
+    <color name="spade_black">#212121</color>
+
+    <!-- 头像底色（三种可切换样式） -->
+    <color name="avatar_blue">#1565C0</color>
+    <color name="avatar_teal">#00796B</color>
+    <color name="avatar_orange">#EF6C00</color>
+
+    <color name="ic_launcher_background">#0D47A1</color>
+</resources>

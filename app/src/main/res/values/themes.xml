@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 按实验补充说明：使用 MaterialComponents 的 Bridge 主题，
+         否则新版 Android Studio 里给 Button 设置背景会没有效果 -->
+    <style name="Theme.FlipCardGame" parent="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="android:windowBackground">@color/page_background</item>
+    </style>
+</resources>
